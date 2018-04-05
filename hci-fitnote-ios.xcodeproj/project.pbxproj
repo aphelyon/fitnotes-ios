@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C5F70A12050B54A0091EBE9 /* icons8-copy-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5F70A02050B54A0091EBE9 /* icons8-copy-24.png */; };
+		6C82E4A4207688BC00120E6E /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */; };
+		6CEC962D2050A6C800CAF3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEC962C2050A6C800CAF3DE /* AppDelegate.swift */; };
+		6CEC962F2050A6C800CAF3DE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEC962E2050A6C800CAF3DE /* FirstViewController.swift */; };
+		6CEC96312050A6C800CAF3DE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEC96302050A6C800CAF3DE /* SecondViewController.swift */; };
+		6CEC96342050A6C800CAF3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEC96322050A6C800CAF3DE /* Main.storyboard */; };
+		6CEC96362050A6C800CAF3DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEC96352050A6C800CAF3DE /* Assets.xcassets */; };
+		6CEC96392050A6C800CAF3DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEC96372050A6C800CAF3DE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C5F70A02050B54A0091EBE9 /* icons8-copy-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-copy-24.png"; path = "../icons8-copy-24.png"; sourceTree = "<group>"; };
+		6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
+		6CEC96292050A6C800CAF3DE /* hci-fitnote-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hci-fitnote-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEC962C2050A6C800CAF3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CEC962E2050A6C800CAF3DE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		6CEC96302050A6C800CAF3DE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		6CEC96332050A6C800CAF3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CEC96352050A6C800CAF3DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CEC96382050A6C800CAF3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CEC963A2050A6C800CAF3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CEC96262050A6C800CAF3DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CEC96202050A6C800CAF3DE = {
+			isa = PBXGroup;
+			children = (
+				6CEC962B2050A6C800CAF3DE /* hci-fitnote-ios */,
+				6CEC962A2050A6C800CAF3DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CEC962A2050A6C800CAF3DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CEC96292050A6C800CAF3DE /* hci-fitnote-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CEC962B2050A6C800CAF3DE /* hci-fitnote-ios */ = {
+			isa = PBXGroup;
+			children = (
+				6C5F70A02050B54A0091EBE9 /* icons8-copy-24.png */,
+				6CEC962C2050A6C800CAF3DE /* AppDelegate.swift */,
+				6CEC962E2050A6C800CAF3DE /* FirstViewController.swift */,
+				6CEC96302050A6C800CAF3DE /* SecondViewController.swift */,
+				6CEC96322050A6C800CAF3DE /* Main.storyboard */,
+				6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */,
+				6CEC96352050A6C800CAF3DE /* Assets.xcassets */,
+				6CEC96372050A6C800CAF3DE /* LaunchScreen.storyboard */,
+				6CEC963A2050A6C800CAF3DE /* Info.plist */,
+			);
+			path = "hci-fitnote-ios";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CEC96282050A6C800CAF3DE /* hci-fitnote-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CEC963D2050A6C800CAF3DE /* Build configuration list for PBXNativeTarget "hci-fitnote-ios" */;
+			buildPhases = (
+				6CEC96252050A6C800CAF3DE /* Sources */,
+				6CEC96262050A6C800CAF3DE /* Frameworks */,
+				6CEC96272050A6C800CAF3DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hci-fitnote-ios";
+			productName = "hci-fitnote-ios";
+			productReference = 6CEC96292050A6C800CAF3DE /* hci-fitnote-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CEC96212050A6C800CAF3DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Michael Chang";
+				TargetAttributes = {
+					6CEC96282050A6C800CAF3DE = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MLJ86LK373;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6CEC96242050A6C800CAF3DE /* Build configuration list for PBXProject "hci-fitnote-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CEC96202050A6C800CAF3DE;
+			productRefGroup = 6CEC962A2050A6C800CAF3DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CEC96282050A6C800CAF3DE /* hci-fitnote-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CEC96272050A6C800CAF3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CEC96392050A6C800CAF3DE /* LaunchScreen.storyboard in Resources */,
+				6CEC96362050A6C800CAF3DE /* Assets.xcassets in Resources */,
+				6C5F70A12050B54A0091EBE9 /* icons8-copy-24.png in Resources */,
+				6CEC96342050A6C800CAF3DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CEC96252050A6C800CAF3DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C82E4A4207688BC00120E6E /* AddWorkoutViewController.swift in Sources */,
+				6CEC96312050A6C800CAF3DE /* SecondViewController.swift in Sources */,
+				6CEC962D2050A6C800CAF3DE /* AppDelegate.swift in Sources */,
+				6CEC962F2050A6C800CAF3DE /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CEC96322050A6C800CAF3DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CEC96332050A6C800CAF3DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CEC96372050A6C800CAF3DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CEC96382050A6C800CAF3DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CEC963B2050A6C800CAF3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CEC963C2050A6C800CAF3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CEC963E2050A6C800CAF3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MLJ86LK373;
+				INFOPLIST_FILE = "hci-fitnote-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.virginia.cs.cs4720.ios-mini-app.mhc6kp.hci-fitnote-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6CEC963F2050A6C800CAF3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MLJ86LK373;
+				INFOPLIST_FILE = "hci-fitnote-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.virginia.cs.cs4720.ios-mini-app.mhc6kp.hci-fitnote-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CEC96242050A6C800CAF3DE /* Build configuration list for PBXProject "hci-fitnote-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEC963B2050A6C800CAF3DE /* Debug */,
+				6CEC963C2050A6C800CAF3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CEC963D2050A6C800CAF3DE /* Build configuration list for PBXNativeTarget "hci-fitnote-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEC963E2050A6C800CAF3DE /* Debug */,
+				6CEC963F2050A6C800CAF3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CEC96212050A6C800CAF3DE /* Project object */;
+}
