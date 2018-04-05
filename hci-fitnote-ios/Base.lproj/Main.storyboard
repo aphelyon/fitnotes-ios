@@ -29,7 +29,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.47368682039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fzt-Dp-fRF" kind="presentation" id="b0h-Rj-yHZ"/>
+                                    <segue destination="fzt-Dp-fRF" kind="presentation" id="nCB-Qe-6bq"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Start New Workout" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IcI-WH-CM7">
@@ -69,6 +69,9 @@
                                     <barButtonItem width="255" style="plain" systemItem="fixedSpace" id="fph-LN-M01"/>
                                     <barButtonItem style="done" systemItem="add" id="sOF-l1-aWW">
                                         <color key="tintColor" red="1" green="0.0" blue="0.47368682040878074" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="fzt-Dp-fRF" kind="presentation" id="d51-bA-g94"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -116,13 +119,10 @@
                     <navigationItem key="navigationItem" title="Add a New Workout" id="pLi-qR-hPX">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Xss-QL-1Tr">
                             <connections>
-                                <action selector="cancelButton:" destination="O4B-gN-nRx" id="aiy-Fn-zMO"/>
+                                <action selector="cancelButton:" destination="O4B-gN-nRx" id="HUc-HQ-Kf3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="cancelButton" destination="Xss-QL-1Tr" id="KPZ-BM-nZC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wen-9B-cVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -211,5 +211,8 @@
         <image name="icons8-copy-24.png" width="24" height="24"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="d51-bA-g94"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.47368682039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
