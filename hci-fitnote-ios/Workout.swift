@@ -10,6 +10,6 @@ import Foundation
 
 
 class Workout {
-    var name: String?
+    var name: String? = ""
     var exercises = [Exercise]()
 }

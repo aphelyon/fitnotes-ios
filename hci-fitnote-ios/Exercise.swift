@@ -9,6 +9,6 @@
 import Foundation
 
 class Exercise {
-    var name: String?
+    var name: String? = ""
     var sets = [WorkoutSet]()  // sets is an array of integers with the sets and reps
 }

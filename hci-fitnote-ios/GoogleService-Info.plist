@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>416492242051-qsh37222kccq99aatm9li3u8vs6fqcfo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.416492242051-qsh37222kccq99aatm9li3u8vs6fqcfo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB-aNgCNDtD2pzxeRfBAa023dNfYdvOIYQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>416492242051</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.virginia.cs.cs4720.ios-mini-app.mhc6kp.hci-fitnote-ios</string>
+	<key>PROJECT_ID</key>
+	<string>ios-fitnotes-hci</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ios-fitnotes-hci.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:416492242051:ios:a901a733950527e1</string>
+	<key>DATABASE_URL</key>
+	<string>https://ios-fitnotes-hci.firebaseio.com</string>
+</dict>
+</plist>
