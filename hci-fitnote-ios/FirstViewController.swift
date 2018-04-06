@@ -14,6 +14,7 @@ var ref: DatabaseReference!
 class FirstViewController: UIViewController {
     
     var bodyparts = [Bodyparts]();
+    var all_exercises = [Exercise]();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,9 @@ class FirstViewController: UIViewController {
                             var exercise = Exercise()
                             exercise.name = item as! String
                             exercises.append(exercise)
+                            if !(self.all_exercises.contains(exercise)) {
+                                self.all_exercises.append(exercise)
+                            }
                         }
                         bodypart.exercises = exercises
                     }
@@ -56,6 +60,12 @@ class FirstViewController: UIViewController {
             let targetController = destinationVC.topViewController as! AddWorkoutViewController
             targetController.tableentries = self.bodyparts
 
+        }
+        
+        if (segue.identifier == "search") {
+            let destinationVC = segue.destination as! UINavigationController
+            let targetController = destinationVC.topViewController as! SearchTableViewController
+            targetController.tableentries = self.all_exercises
         }
     }
     override func didReceiveMemoryWarning() {
