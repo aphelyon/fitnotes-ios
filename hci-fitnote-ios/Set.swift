@@ -10,6 +10,6 @@ import Foundation
 
 
 class WorkoutSet {
-    var weight = 0
+    var weight = 0.0
     var reps = 0
 }

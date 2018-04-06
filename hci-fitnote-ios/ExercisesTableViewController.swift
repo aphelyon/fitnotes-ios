@@ -10,6 +10,7 @@ import UIKit
 
 class ExercisesTableViewController: UITableViewController {
     var bodypart = Bodyparts()
+    var index: Int?
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -45,11 +46,26 @@ class ExercisesTableViewController: UITableViewController {
         let cellIdentifier = "exerciseCell"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        let exercise = self.bodypart.exercises[indexPath.row].name
-        
-        cell.textLabel?.text = exercise
+        let exercise_name = self.bodypart.exercises[indexPath.row].name
+        cell.textLabel?.text = exercise_name
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        index = indexPath[1]
+        self.performSegue(withIdentifier: "addsets", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "addsets") {
+            let destinationVC = segue.destination as! UINavigationController
+            let targetController = destinationVC.topViewController as! AddSetsViewController
+            targetController.navigationBar.title = bodypart.exercises[index!].name
+            targetController.exercise = bodypart.exercises[index!]
+        }
+        
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

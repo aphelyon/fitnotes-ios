@@ -14,6 +14,7 @@
 		6C21F8B220770AFE0012CF1D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21F8AF20770AFE0012CF1D /* Exercise.swift */; };
 		6C21F8B420771E380012CF1D /* Bodyparts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21F8B320771E380012CF1D /* Bodyparts.swift */; };
 		6C21F8B6207726AC0012CF1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C21F8B5207726AC0012CF1D /* GoogleService-Info.plist */; };
+		6C2644692077FBB3008618DF /* AddSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2644682077FBB3008618DF /* AddSetsViewController.swift */; };
 		6C5F70A12050B54A0091EBE9 /* icons8-copy-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5F70A02050B54A0091EBE9 /* icons8-copy-24.png */; };
 		6C6837F420775F7000963616 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6837F320775F7000963616 /* ExercisesTableViewController.swift */; };
 		6C82E4A4207688BC00120E6E /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */; };
@@ -34,6 +35,7 @@
 		6C21F8AF20770AFE0012CF1D /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		6C21F8B320771E380012CF1D /* Bodyparts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bodyparts.swift; sourceTree = "<group>"; };
 		6C21F8B5207726AC0012CF1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6C2644682077FBB3008618DF /* AddSetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSetsViewController.swift; sourceTree = "<group>"; };
 		6C5F70A02050B54A0091EBE9 /* icons8-copy-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-copy-24.png"; path = "../icons8-copy-24.png"; sourceTree = "<group>"; };
 		6C6837F320775F7000963616 /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
 		6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				6CEC962E2050A6C800CAF3DE /* FirstViewController.swift */,
 				6CEC96302050A6C800CAF3DE /* SecondViewController.swift */,
 				6CEC96322050A6C800CAF3DE /* Main.storyboard */,
+				6C2644682077FBB3008618DF /* AddSetsViewController.swift */,
 				6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */,
 				6C6837F320775F7000963616 /* ExercisesTableViewController.swift */,
 				6C00274020777544002B81A4 /* SearchTableViewController.swift */,
@@ -250,6 +253,7 @@
 				6C6837F420775F7000963616 /* ExercisesTableViewController.swift in Sources */,
 				6C21F8B120770AFE0012CF1D /* Set.swift in Sources */,
 				6CEC962D2050A6C800CAF3DE /* AppDelegate.swift in Sources */,
+				6C2644692077FBB3008618DF /* AddSetsViewController.swift in Sources */,
 				6C21F8B020770AFE0012CF1D /* Workout.swift in Sources */,
 				6C00274120777544002B81A4 /* SearchTableViewController.swift in Sources */,
 				6C21F8B220770AFE0012CF1D /* Exercise.swift in Sources */,
