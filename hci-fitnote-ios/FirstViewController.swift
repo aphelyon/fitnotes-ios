@@ -66,6 +66,7 @@ class FirstViewController: UIViewController {
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! SearchTableViewController
             targetController.tableentries = self.all_exercises
+            targetController.bodyparts_search = self.bodyparts
         }
     }
     override func didReceiveMemoryWarning() {

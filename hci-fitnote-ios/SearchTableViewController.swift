@@ -11,6 +11,7 @@ import UIKit
 class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
     var tableentries = [Exercise]()
+    var bodyparts_search = [Bodyparts]()
     var filteredData: [String]!
     var exercises = [String]()
     
@@ -75,6 +76,13 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         }
         
         tableView.reloadData()
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "create_search") {
+            let destinationVC = segue.destination as! UINavigationController
+            let targetController = destinationVC.topViewController as! CreateViewController
+            targetController.bodyparts_create = self.bodyparts_search
+        }
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E616ED7535C030F4AB57CC2 /* Pods_hci_fitnote_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A80417D7F9055241641125F /* Pods_hci_fitnote_ios.framework */; };
 		6C00274120777544002B81A4 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C00274020777544002B81A4 /* SearchTableViewController.swift */; };
+		6C11C5952078497B00D78199 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11C5942078497B00D78199 /* CreateViewController.swift */; };
 		6C21F8B020770AFE0012CF1D /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21F8AD20770AFE0012CF1D /* Workout.swift */; };
 		6C21F8B120770AFE0012CF1D /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21F8AE20770AFE0012CF1D /* Set.swift */; };
 		6C21F8B220770AFE0012CF1D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21F8AF20770AFE0012CF1D /* Exercise.swift */; };
@@ -30,6 +31,7 @@
 		27259381362C8723997CED57 /* Pods-hci-fitnote-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hci-fitnote-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-hci-fitnote-ios/Pods-hci-fitnote-ios.release.xcconfig"; sourceTree = "<group>"; };
 		5A80417D7F9055241641125F /* Pods_hci_fitnote_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hci_fitnote_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C00274020777544002B81A4 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		6C11C5942078497B00D78199 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		6C21F8AD20770AFE0012CF1D /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		6C21F8AE20770AFE0012CF1D /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		6C21F8AF20770AFE0012CF1D /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				6C2644682077FBB3008618DF /* AddSetsViewController.swift */,
 				6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */,
 				6C6837F320775F7000963616 /* ExercisesTableViewController.swift */,
+				6C11C5942078497B00D78199 /* CreateViewController.swift */,
 				6C00274020777544002B81A4 /* SearchTableViewController.swift */,
 				6CEC96352050A6C800CAF3DE /* Assets.xcassets */,
 				6CEC96372050A6C800CAF3DE /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 				6CEC962D2050A6C800CAF3DE /* AppDelegate.swift in Sources */,
 				6C2644692077FBB3008618DF /* AddSetsViewController.swift in Sources */,
 				6C21F8B020770AFE0012CF1D /* Workout.swift in Sources */,
+				6C11C5952078497B00D78199 /* CreateViewController.swift in Sources */,
 				6C00274120777544002B81A4 /* SearchTableViewController.swift in Sources */,
 				6C21F8B220770AFE0012CF1D /* Exercise.swift in Sources */,
 				6CEC962F2050A6C800CAF3DE /* FirstViewController.swift in Sources */,

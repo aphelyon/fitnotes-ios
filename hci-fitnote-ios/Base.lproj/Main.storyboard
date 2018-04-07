@@ -43,6 +43,11 @@
                                 <action selector="cancel:" destination="fJO-yS-32d" id="DdO-be-EO4"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zRj-fb-xEv">
+                            <connections>
+                                <segue destination="n2O-X5-7s6" kind="presentation" identifier="create_search" id="GTU-D8-a9n"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="j1Q-Mz-gAR" id="NJY-dX-w9o"/>
@@ -50,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ven-Na-QJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2796" y="-1131.1844077961021"/>
+            <point key="canvasLocation" x="3058" y="-1121"/>
         </scene>
         <!--Add Sets View Controller-->
         <scene sceneID="BAY-tM-Nwn">
@@ -338,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wen-9B-cVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3466.4000000000001" y="-314.39280359820094"/>
+            <point key="canvasLocation" x="4405.6000000000004" y="-314.39280359820094"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="q2a-QT-Kxj">
@@ -369,6 +374,11 @@
                                 <action selector="cancel:" destination="fZr-8I-s7T" id="Cit-tb-VYU"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0Nc-lC-5UF">
+                            <connections>
+                                <segue destination="n2O-X5-7s6" kind="presentation" id="9ht-UI-sW9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="59d-5f-Ml4" kind="presentation" identifier="addsets" id="9xi-W6-hEf"/>
@@ -376,7 +386,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bac-3P-Oog" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5616.8000000000002" y="-314.39280359820094"/>
+            <point key="canvasLocation" x="6556" y="-314.39280359820094"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -421,6 +431,71 @@
             </objects>
             <point key="canvasLocation" x="1688.8" y="445.72713643178412"/>
         </scene>
+        <!--Create Your Own Exercise-->
+        <scene sceneID="bIo-V8-inl">
+            <objects>
+                <viewController id="Hrl-rB-Uif" customClass="CreateViewController" customModule="hci_fitnote_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KDV-la-R5X"/>
+                        <viewControllerLayoutGuide type="bottom" id="XnY-Ay-vl1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uhV-IN-TRd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SOh-d3-NAh">
+                                <rect key="frame" x="0.0" y="148" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hrl-rB-Uif" id="pWx-MJ-mXc"/>
+                                    <outlet property="delegate" destination="Hrl-rB-Uif" id="zhd-2p-5xE"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wZ-7P-0fd">
+                                <rect key="frame" x="16" y="336" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iub-0v-gGb">
+                                <rect key="frame" x="16" y="365" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Body Part:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fio-g1-wfG">
+                                <rect key="frame" x="16" y="112" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Your Own Exercise" id="obi-is-Zuz">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="lAE-EU-JGZ">
+                            <connections>
+                                <action selector="cancel:" destination="Hrl-rB-Uif" id="DRc-Go-Rnt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="dwz-Cg-m1Q">
+                            <connections>
+                                <action selector="saveExercise:" destination="Hrl-rB-Uif" id="D5I-Ce-bku"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="exercise" destination="iub-0v-gGb" id="K5T-CY-h5Y"/>
+                        <outlet property="picker" destination="SOh-d3-NAh" id="TQC-9C-NTk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60g-MM-Mnm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3469.5999999999999" y="471.8140929535233"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -457,7 +532,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q22-4U-chV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2527.1999999999998" y="-314.39280359820094"/>
+            <point key="canvasLocation" x="2183" y="-334"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zxZ-LD-cmE">
@@ -475,7 +550,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WNo-rO-HtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4676" y="-314.39280359820094"/>
+            <point key="canvasLocation" x="5615.1999999999998" y="-314.39280359820094"/>
         </scene>
         <!--Day-->
         <scene sceneID="bM2-HV-xEo">
@@ -551,6 +626,24 @@
             </objects>
             <point key="canvasLocation" x="4045.5999999999999" y="-1586.3568215892055"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BSf-eE-nlG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n2O-X5-7s6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="my2-dX-A27">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hrl-rB-Uif" kind="relationship" relationship="rootViewController" id="V18-Kd-lUS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1a-ad-HXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2532" y="472"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
@@ -558,6 +651,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="GTU-D8-a9n"/>
         <segue reference="x94-59-uWR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.47368682039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
