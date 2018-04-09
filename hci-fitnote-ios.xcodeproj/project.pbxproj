@@ -19,6 +19,10 @@
 		6C5F70A12050B54A0091EBE9 /* icons8-copy-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5F70A02050B54A0091EBE9 /* icons8-copy-24.png */; };
 		6C6837F420775F7000963616 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6837F320775F7000963616 /* ExercisesTableViewController.swift */; };
 		6C82E4A4207688BC00120E6E /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */; };
+		6CB069AD20792BEE00700D13 /* line_chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CB069AA20792BED00700D13 /* line_chart.png */; };
+		6CB069AE20792BEE00700D13 /* line_chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CB069AB20792BED00700D13 /* line_chart@2x.png */; };
+		6CB069AF20792BEE00700D13 /* line_chart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CB069AC20792BEE00700D13 /* line_chart@3x.png */; };
+		6CB069B120792CEB00700D13 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB069B020792CEB00700D13 /* GraphViewController.swift */; };
 		6CEC962D2050A6C800CAF3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEC962C2050A6C800CAF3DE /* AppDelegate.swift */; };
 		6CEC962F2050A6C800CAF3DE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEC962E2050A6C800CAF3DE /* FirstViewController.swift */; };
 		6CEC96312050A6C800CAF3DE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEC96302050A6C800CAF3DE /* SecondViewController.swift */; };
@@ -41,6 +45,10 @@
 		6C5F70A02050B54A0091EBE9 /* icons8-copy-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-copy-24.png"; path = "../icons8-copy-24.png"; sourceTree = "<group>"; };
 		6C6837F320775F7000963616 /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
 		6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
+		6CB069AA20792BED00700D13 /* line_chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_chart.png; sourceTree = "<group>"; };
+		6CB069AB20792BED00700D13 /* line_chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line_chart@2x.png"; sourceTree = "<group>"; };
+		6CB069AC20792BEE00700D13 /* line_chart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line_chart@3x.png"; sourceTree = "<group>"; };
+		6CB069B020792CEB00700D13 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		6CEC96292050A6C800CAF3DE /* hci-fitnote-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hci-fitnote-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEC962C2050A6C800CAF3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CEC962E2050A6C800CAF3DE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,9 @@
 		6CEC962B2050A6C800CAF3DE /* hci-fitnote-ios */ = {
 			isa = PBXGroup;
 			children = (
+				6CB069AA20792BED00700D13 /* line_chart.png */,
+				6CB069AB20792BED00700D13 /* line_chart@2x.png */,
+				6CB069AC20792BEE00700D13 /* line_chart@3x.png */,
 				6C21F8B5207726AC0012CF1D /* GoogleService-Info.plist */,
 				6C21F8AD20770AFE0012CF1D /* Workout.swift */,
 				6C21F8AE20770AFE0012CF1D /* Set.swift */,
@@ -103,6 +114,7 @@
 				6CEC962E2050A6C800CAF3DE /* FirstViewController.swift */,
 				6CEC96302050A6C800CAF3DE /* SecondViewController.swift */,
 				6CEC96322050A6C800CAF3DE /* Main.storyboard */,
+				6CB069B020792CEB00700D13 /* GraphViewController.swift */,
 				6C2644682077FBB3008618DF /* AddSetsViewController.swift */,
 				6C82E4A3207688BC00120E6E /* AddWorkoutViewController.swift */,
 				6C6837F320775F7000963616 /* ExercisesTableViewController.swift */,
@@ -187,11 +199,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB069AF20792BEE00700D13 /* line_chart@3x.png in Resources */,
+				6CB069AD20792BEE00700D13 /* line_chart.png in Resources */,
 				6CEC96392050A6C800CAF3DE /* LaunchScreen.storyboard in Resources */,
 				6CEC96362050A6C800CAF3DE /* Assets.xcassets in Resources */,
 				6C21F8B6207726AC0012CF1D /* GoogleService-Info.plist in Resources */,
 				6C5F70A12050B54A0091EBE9 /* icons8-copy-24.png in Resources */,
 				6CEC96342050A6C800CAF3DE /* Main.storyboard in Resources */,
+				6CB069AE20792BEE00700D13 /* line_chart@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +272,7 @@
 				6C21F8B120770AFE0012CF1D /* Set.swift in Sources */,
 				6CEC962D2050A6C800CAF3DE /* AppDelegate.swift in Sources */,
 				6C2644692077FBB3008618DF /* AddSetsViewController.swift in Sources */,
+				6CB069B120792CEB00700D13 /* GraphViewController.swift in Sources */,
 				6C21F8B020770AFE0012CF1D /* Workout.swift in Sources */,
 				6C11C5952078497B00D78199 /* CreateViewController.swift in Sources */,
 				6C00274120777544002B81A4 /* SearchTableViewController.swift in Sources */,
