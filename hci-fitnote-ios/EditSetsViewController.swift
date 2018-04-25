@@ -9,6 +9,9 @@
 import UIKit
 
 class EditSetsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+    var myPickerData = [Double]()
+    var picker2Options = [Int]()
+    
     @IBOutlet weak var navigationBar: UINavigationItem!
     var exercise = Exercise()
     @IBOutlet weak var weightTextField: UITextField!
