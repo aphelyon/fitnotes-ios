@@ -58,7 +58,7 @@ class AddSetsViewController: UIViewController, UITableViewDataSource, UITableVie
         repTextField.text = ""
     }
     @IBAction func addSet(_ sender: Any) {
-        if !(weightTextField.text == "" && repTextField.text == "") {
+        if weightTextField.text != "" && repTextField.text != "" {
             var set = WorkoutSet()
             set.reps = Int(repTextField.text!)!
             set.weight = Double(weightTextField.text!)!
