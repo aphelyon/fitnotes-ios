@@ -97,6 +97,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             let targetController = destinationVC.topViewController as! SearchTableViewController
             targetController.tableentries = self.all_exercises
             targetController.bodyparts_search = self.bodyparts
+            targetController.workout = self.currentWorkout
         }
         
         if (segue.identifier == "search2") {
@@ -104,6 +105,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             let targetController = destinationVC.topViewController as! SearchTableViewController
             targetController.tableentries = self.all_exercises
             targetController.bodyparts_search = self.bodyparts
+            targetController.workout = self.currentWorkout
         }
         
         if (segue.identifier == "viewsets") {

@@ -52,9 +52,11 @@
                     <connections>
                         <outlet property="searchBar" destination="j1Q-Mz-gAR" id="NJY-dX-w9o"/>
                         <segue destination="59d-5f-Ml4" kind="presentation" identifier="addsetssearch" id="fUM-9o-mVP"/>
+                        <segue destination="npF-GN-HaV" kind="unwind" identifier="fromSearch" unwindAction="unwindToFirstWithSegue:" id="LBb-3H-Zhn"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ven-Na-QJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="npF-GN-HaV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3058" y="-1121"/>
         </scene>
@@ -201,6 +203,7 @@
                         <outlet property="weightTextField" destination="hLE-De-9wR" id="tHt-zI-zPb"/>
                         <segue destination="Agx-IG-wHa" kind="unwind" identifier="saveWorkout" unwindAction="unwindToFirstWithSegue:" id="Rei-N1-Obq"/>
                         <segue destination="Agx-IG-wHa" kind="unwind" identifier="addMoreExercises" unwindAction="unwindToBodyWithSegue:" id="ALj-qs-1EC"/>
+                        <segue destination="Agx-IG-wHa" kind="unwind" identifier="addMoreSearch" unwindAction="unwindToSearchWithSegue:" id="Gad-ha-J53"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Acg-Jc-QAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
