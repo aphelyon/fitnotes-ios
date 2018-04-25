@@ -8,10 +8,13 @@
 
 import UIKit
 
-class AddSetsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class AddSetsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
     var exercise = Exercise()
     var workout = Workout()
+    
+    var myPickerData = [Double]()
+    var picker2Options = [Int]()
     
     func displayAlertWithTitle(title: String, message: String){
         let controller = UIAlertController(title: title,
@@ -66,34 +69,7 @@ class AddSetsViewController: UIViewController, UITableViewDataSource, UITableVie
             self.SetTableView.reloadData()
         }
     }
-    @IBAction func addweight(_ sender: Any) {
-        if weightTextField.text! == "" {
-            weightTextField.text! = "2.5"
-        }
-        else {
-            var double = Double(weightTextField.text!)
-            double = double! + 2.5
-            weightTextField.text = String(double!)
-        }
-    }
-    
    
-    @IBAction func subtractweight(_ sender: Any) {
-        if weightTextField.text! == "" {
-            weightTextField.text! = "0.00"
-        }
-        else {
-            var double = Double(weightTextField.text!)
-            if double! - 2.5 < 0 {
-                double = 0.0
-                weightTextField.text = String(double!)
-            }
-            else {
-                double = double! - 2.5
-                weightTextField.text = String(double!)
-            }
-        }
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -105,35 +81,24 @@ class AddSetsViewController: UIViewController, UITableViewDataSource, UITableVie
         // Do any additional setup after loading the view.
         weightTextField.text = ""
         repTextField.text = ""
+        for index in 1...20 {
+            picker2Options.append(index)
+        }
+        for i in stride(from: 0, to: 1200, by: 2.5) {
+            myPickerData.append(i)
+        }
+        
+        let thePicker = UIPickerView()
+        let thePicker2 = UIPickerView()
+        thePicker.tag = 1
+        thePicker2.tag = 2
+        weightTextField.inputView = thePicker
+        repTextField.inputView = thePicker2
+        thePicker.delegate = self
+        thePicker2.delegate = self
     }
    
     
-    @IBAction func subtractreps(_ sender: Any) {
-        if repTextField.text! == "" {
-            repTextField.text! = "0"
-        }
-        else {
-            var int = Int(repTextField.text!)
-            if int! - 1 < 0 {
-                int = 0
-                repTextField.text = String(int!)
-            }
-            else {
-                int = int! - 1
-                repTextField.text = String(int!)
-            }
-        }
-    }
-    @IBAction func addreps(_ sender: Any) {
-        if repTextField.text! == "" {
-            repTextField.text! = "1"
-        }
-        else {
-            var int = Int(repTextField.text!)
-            int = int! + 1
-            repTextField.text = String(int!)
-        }
-    }
     @IBOutlet weak var repTextField: UITextField!
     
     override func didReceiveMemoryWarning() {
@@ -195,6 +160,38 @@ class AddSetsViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
 
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView( _ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if pickerView.tag == 1 {
+            return myPickerData.count
+        }
+        else {
+            return picker2Options.count
+        }
+        
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView.tag == 1 {
+            return String(myPickerData[row])
+        }
+        else {
+            return String(picker2Options[row])
+        }
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView.tag == 1 {
+            weightTextField.text = String(myPickerData[row])
+        } else if pickerView.tag == 2 {
+            repTextField.text = String(picker2Options[row])
+        }
+    }
     /*
     // MARK: - Navigation
 
