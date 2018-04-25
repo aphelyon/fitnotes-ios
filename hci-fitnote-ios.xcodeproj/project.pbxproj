@@ -105,7 +105,6 @@
 		6CEC962B2050A6C800CAF3DE /* hci-fitnote-ios */ = {
 			isa = PBXGroup;
 			children = (
-				6C2AFED520910826004363DA /* EditSetsViewController.swift */,
 				6CB069AA20792BED00700D13 /* line_chart.png */,
 				6CB069AB20792BED00700D13 /* line_chart@2x.png */,
 				6CB069AC20792BEE00700D13 /* line_chart@3x.png */,
@@ -125,6 +124,7 @@
 				6CB069B020792CEB00700D13 /* GraphViewController.swift */,
 				6C11C5942078497B00D78199 /* CreateViewController.swift */,
 				6C00274020777544002B81A4 /* SearchTableViewController.swift */,
+				6C2AFED520910826004363DA /* EditSetsViewController.swift */,
 				6C2644682077FBB3008618DF /* AddSetsViewController.swift */,
 				6CEC96352050A6C800CAF3DE /* Assets.xcassets */,
 				6CEC96372050A6C800CAF3DE /* LaunchScreen.storyboard */,
