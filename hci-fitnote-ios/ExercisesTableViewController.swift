@@ -10,9 +10,13 @@ import UIKit
 
 class ExercisesTableViewController: UITableViewController {
     var bodypart = Bodyparts()
+    var bodyparts = [Bodyparts()]
     var workout = Workout()
     var index: Int?
     
+    @IBAction func createExercise(_ sender: Any) {
+        self.performSegue(withIdentifier: "createExercise", sender: nil)
+    }
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -68,6 +72,11 @@ class ExercisesTableViewController: UITableViewController {
             targetController.workout = workout
         }
         
+        if (segue.identifier == "createExercise") {
+            let destinationVC = segue.destination as! UINavigationController
+            let targetController = destinationVC.topViewController as! CreateViewController
+            targetController.bodyparts_create = bodyparts
+        }
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

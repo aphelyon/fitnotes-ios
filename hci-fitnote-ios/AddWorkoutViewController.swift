@@ -63,6 +63,7 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! ExercisesTableViewController
             targetController.bodypart = tableentries[index!]
+            targetController.bodyparts = tableentries
             targetController.workout = workout
         }
         

@@ -11,8 +11,32 @@ import UIKit
 class CreateViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var bodyparts_create = [Bodyparts]()
-    var body_parts = [String]()
+    var selected_picker = Bodyparts()
+    var exerciseTextField = Exercise()
+    
+    func displayAlertWithTitle(title: String, message: String){
+        let controller = UIAlertController(title: title,
+                                           message: message,
+                                           preferredStyle: .alert)
+        
+        controller.addAction(UIAlertAction(title: "OK",
+                                           style: .default,
+                                           handler: nil))
+        
+        present(controller, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func saveExercise(_ sender: Any) {
+        if exercise.text == "" {
+            self.displayAlertWithTitle(title: "No Sets in Current Exercise",
+                                       message: "Please add some to sets to the exercise")
+        }
+        else {
+            exerciseTextField.name = exercise.text!
+            selected_picker.exercises.append(exerciseTextField)
+            self.performSegue(withIdentifier: "createExercise", sender: nil)
+        }
     }
     @IBOutlet weak var exercise: UITextField!
     
@@ -22,13 +46,9 @@ class CreateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var picker: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        for item in bodyparts_create {
-            body_parts.append(item.name!)
-        }
-        print(body_parts)
+        selected_picker = bodyparts_create[0]
         self.picker.delegate = self
         self.picker.dataSource = self
-        
         // Do any additional setup after loading the view.
     }
 
@@ -52,8 +72,21 @@ class CreateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         return bodyparts_create[row].name
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selected_picker = bodyparts_create[row]
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "createExercise") {
+            let destinationVC = segue.destination as! FirstViewController
+            let targetController = destinationVC
+            targetController.bodyparts = bodyparts_create
+        }
     }
     
     /*

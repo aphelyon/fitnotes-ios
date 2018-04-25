@@ -564,7 +564,8 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="0Nc-lC-5UF">
                             <connections>
-                                <segue destination="n2O-X5-7s6" kind="presentation" id="9ht-UI-sW9"/>
+                                <action selector="createExercise:" destination="fZr-8I-s7T" id="Lw2-lC-aP3"/>
+                                <segue destination="n2O-X5-7s6" kind="presentation" identifier="createExercise" id="9ht-UI-sW9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -678,9 +679,11 @@
                     <connections>
                         <outlet property="exercise" destination="iub-0v-gGb" id="K5T-CY-h5Y"/>
                         <outlet property="picker" destination="SOh-d3-NAh" id="TQC-9C-NTk"/>
+                        <segue destination="tbm-2S-kIN" kind="unwind" identifier="createExercise" unwindAction="unwindToFirstWithSegue:" id="KxS-ry-w0W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60g-MM-Mnm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tbm-2S-kIN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3469.5999999999999" y="471.8140929535233"/>
         </scene>
@@ -907,8 +910,8 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GTU-D8-a9n"/>
-        <segue reference="fUM-9o-mVP"/>
+        <segue reference="9ht-UI-sW9"/>
+        <segue reference="9xi-W6-hEf"/>
         <segue reference="x94-59-uWR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.47368682039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
