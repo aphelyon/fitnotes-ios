@@ -46,7 +46,7 @@ class AddSetsViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func addExercises(_ sender: Any) {
         if exercise.sets.count > 0{
             workout.exercises.append(exercise)
-            self.performSegue(withIdentifier: "addMoreExercises", sender: self)
+            self.performSegue(withIdentifier: "addMoreSearch", sender: self)
         }
         else {
             self.displayAlertWithTitle(title: "No Sets in Current Exercise",
@@ -188,8 +188,8 @@ class AddSetsViewController: UIViewController, UITableViewDataSource, UITableVie
             targetController.tableView.isHidden = false
             targetController.tableView.reloadData()
         }
-        if (segue.identifier == "addMoreExercises") {
-            let destinationVC = segue.destination as! AddWorkoutViewController
+        if (segue.identifier == "addMoreSearch") {
+            let destinationVC = segue.destination as! SearchTableViewController
             let targetController = destinationVC
             targetController.workout = workout
         }

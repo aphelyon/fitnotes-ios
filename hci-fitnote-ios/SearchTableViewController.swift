@@ -15,14 +15,19 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     var exercises_dict = [String: Exercise]()
     var filteredData: [String]!
     var exercises = [String]()
+    var workout = Workout()
     var index: Int?
     
     
     @IBAction func cancel(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "fromSearch", sender: nil)
     }
     
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    @IBAction func unwindToSearch(segue:UIStoryboardSegue) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,12 +95,26 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! CreateViewController
             targetController.bodyparts_create = self.bodyparts_search
+            targetController.exercises = self.tableentries
         }
         if (segue.identifier == "addsetssearch") {
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! AddSetsViewController
             targetController.navigationBar.title = filteredData[index!]
             targetController.exercise = exercises_dict[filteredData[index!]]!
+            targetController.workout = workout
+        }
+        if (segue.identifier == "fromSearch") {
+            if workout.exercises.count > 0 {
+                let destinationVC = segue.destination as! FirstViewController
+                let targetController = destinationVC
+                targetController.currentWorkout = workout
+                targetController.startTextField.text = "Add exercises to current workout"
+                targetController.startTextField.sizeToFit()
+                targetController.startTextField.center.x = self.view.center.x
+                targetController.tableView.isHidden = false
+                targetController.tableView.reloadData()
+            }
         }
     }
     /*
