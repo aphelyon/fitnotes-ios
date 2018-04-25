@@ -362,7 +362,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.47368682039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fzt-Dp-fRF" kind="presentation" identifier="addWorkout" id="bdL-tS-g6z"/>
+                                    <segue destination="15o-aV-kpT" kind="presentation" identifier="search2" id="MBb-s5-5af"/>
                                 </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qe9-wB-BcK">
@@ -459,14 +459,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="7JO-6M-FuP">
-                        <barButtonItem key="leftBarButtonItem" title="Search" id="MLM-NZ-a63">
-                            <connections>
-                                <segue destination="15o-aV-kpT" kind="presentation" identifier="search" id="vbP-Yq-kSF"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JXJ-6H-WKT">
                             <connections>
-                                <segue destination="fzt-Dp-fRF" kind="presentation" identifier="addWorkout2" id="x94-59-uWR"/>
+                                <segue destination="15o-aV-kpT" kind="presentation" identifier="search" id="YtG-tt-MrZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -910,9 +905,9 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9ht-UI-sW9"/>
-        <segue reference="9xi-W6-hEf"/>
-        <segue reference="x94-59-uWR"/>
+        <segue reference="GTU-D8-a9n"/>
+        <segue reference="fUM-9o-mVP"/>
+        <segue reference="YtG-tt-MrZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.47368682039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

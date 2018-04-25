@@ -91,20 +91,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "addWorkout") {
-            let destinationVC = segue.destination as! UINavigationController
-            let targetController = destinationVC.topViewController as! AddWorkoutViewController
-            targetController.tableentries = self.bodyparts
-            targetController.workout = self.currentWorkout
-        }
-        
-        if (segue.identifier == "addWorkout2") {
-            let destinationVC = segue.destination as! UINavigationController
-            let targetController = destinationVC.topViewController as! AddWorkoutViewController
-            targetController.tableentries = self.bodyparts
-            targetController.workout = self.currentWorkout
-
-        }
         
         if (segue.identifier == "search") {
             let destinationVC = segue.destination as! UINavigationController
@@ -112,6 +98,14 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             targetController.tableentries = self.all_exercises
             targetController.bodyparts_search = self.bodyparts
         }
+        
+        if (segue.identifier == "search2") {
+            let destinationVC = segue.destination as! UINavigationController
+            let targetController = destinationVC.topViewController as! SearchTableViewController
+            targetController.tableentries = self.all_exercises
+            targetController.bodyparts_search = self.bodyparts
+        }
+        
         if (segue.identifier == "viewsets") {
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! EditSetsViewController

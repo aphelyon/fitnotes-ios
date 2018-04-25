@@ -13,6 +13,7 @@ class CreateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     var bodyparts_create = [Bodyparts]()
     var selected_picker = Bodyparts()
     var exerciseTextField = Exercise()
+    var exercises = [Exercise]()
     
     func displayAlertWithTitle(title: String, message: String){
         let controller = UIAlertController(title: title,
@@ -35,6 +36,7 @@ class CreateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         else {
             exerciseTextField.name = exercise.text!
             selected_picker.exercises.append(exerciseTextField)
+            exercises.append(exerciseTextField)
             self.performSegue(withIdentifier: "createExercise", sender: nil)
         }
     }
@@ -86,6 +88,7 @@ class CreateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             let destinationVC = segue.destination as! FirstViewController
             let targetController = destinationVC
             targetController.bodyparts = bodyparts_create
+            targetController.all_exercises = exercises
         }
     }
     

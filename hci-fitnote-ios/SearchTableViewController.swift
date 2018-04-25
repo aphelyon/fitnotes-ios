@@ -15,6 +15,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     var exercises_dict = [String: Exercise]()
     var filteredData: [String]!
     var exercises = [String]()
+    var workout = Workout()
     var index: Int?
     
     
@@ -90,6 +91,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! CreateViewController
             targetController.bodyparts_create = self.bodyparts_search
+            targetController.exercises = self.tableentries
         }
         if (segue.identifier == "addsetssearch") {
             let destinationVC = segue.destination as! UINavigationController
