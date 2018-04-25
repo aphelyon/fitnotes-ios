@@ -19,7 +19,7 @@ class EditSetsViewController: UIViewController, UITableViewDataSource, UITableVi
   
     @IBOutlet weak var SetTableView: UITableView!
     @IBAction func addSet(_ sender: Any) {
-        if !(weightTextField.text == "" && repTextField.text == "") {
+        if weightTextField.text != "" && repTextField.text != "" {
             var set = WorkoutSet()
             set.reps = Int(repTextField.text!)!
             set.weight = Double(weightTextField.text!)!
