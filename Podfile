@@ -10,4 +10,5 @@ pod 'FSCalendar'
 pod ‘Charts’
 pod 'Firebase'
 pod 'Firebase/Database'
+pod 'SwiftDate'
 end

@@ -12,7 +12,11 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
     
     var tableentries = [Bodyparts]()
     var index: Int?
+    var workout = Workout()
     
+    @IBAction func unwindToBody(segue:UIStoryboardSegue) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +29,7 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     @IBAction func cancelButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "backFromBody", sender: self)
     }
    
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -59,8 +63,21 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! ExercisesTableViewController
             targetController.bodypart = tableentries[index!]
+            targetController.workout = workout
         }
         
+        if (segue.identifier == "backFromBody") {
+            if workout.exercises.count > 0 {
+                let destinationVC = segue.destination as! FirstViewController
+                let targetController = destinationVC
+                targetController.currentWorkout = workout
+                targetController.startTextField.text = "Add exercises to current workout"
+                targetController.startTextField.sizeToFit()
+                targetController.startTextField.center.x = self.view.center.x
+                targetController.tableView.isHidden = false
+                targetController.tableView.reloadData()
+            }
+        }
     }
     /*
     // MARK: - Navigation

@@ -12,8 +12,10 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
     var tableentries = [Exercise]()
     var bodyparts_search = [Bodyparts]()
+    var exercises_dict = [String: Exercise]()
     var filteredData: [String]!
     var exercises = [String]()
+    var index: Int?
     
     
     @IBAction func cancel(_ sender: Any) {
@@ -27,6 +29,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         searchBar.delegate = self
         for item in tableentries{
             exercises.append(item.name!)
+            exercises_dict[item.name!] = item
         }
         filteredData = exercises
         // Uncomment the following line to preserve selection between presentations
@@ -47,7 +50,12 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        index = indexPath[1]
+        self.performSegue(withIdentifier: "addsetssearch", sender: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return self.filteredData.count
@@ -82,6 +90,12 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! CreateViewController
             targetController.bodyparts_create = self.bodyparts_search
+        }
+        if (segue.identifier == "addsetssearch") {
+            let destinationVC = segue.destination as! UINavigationController
+            let targetController = destinationVC.topViewController as! AddSetsViewController
+            targetController.navigationBar.title = filteredData[index!]
+            targetController.exercise = exercises_dict[filteredData[index!]]!
         }
     }
     /*

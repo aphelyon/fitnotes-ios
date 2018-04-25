@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C7906A955CFE71BD2CFBDBEE866973CB'
+               BlueprintIdentifier = '1FB1A358D5DB3E3AE9ED15FCBAFAAA85'
                BlueprintName = 'Pods-hci-fitnote-ios'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-hci-fitnote-ios.framework'>

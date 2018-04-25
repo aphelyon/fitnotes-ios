@@ -10,6 +10,7 @@ import UIKit
 
 class ExercisesTableViewController: UITableViewController {
     var bodypart = Bodyparts()
+    var workout = Workout()
     var index: Int?
     
     @IBAction func cancel(_ sender: Any) {
@@ -64,6 +65,7 @@ class ExercisesTableViewController: UITableViewController {
             let targetController = destinationVC.topViewController as! AddSetsViewController
             targetController.navigationBar.title = bodypart.exercises[index!].name
             targetController.exercise = bodypart.exercises[index!]
+            targetController.workout = workout
         }
         
     }

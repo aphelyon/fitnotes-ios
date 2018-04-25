@@ -33,12 +33,14 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftDate (4.4.2)
 
 DEPENDENCIES:
   - Charts
   - Firebase
   - Firebase/Database
   - FSCalendar
+  - SwiftDate
 
 SPEC CHECKSUMS:
   Charts: 0705898046257443f0afbbc3179f4b67507b6e48
@@ -51,7 +53,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   leveldb-library: 9e29a1d913f922444127a7d0f28b025a0e2ba053
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftDate: 131cf2f09b390f0a07f0099e36005ffe2fbf4c7e
 
-PODFILE CHECKSUM: 0580dd6505ada24e9450cb702d90dabde1240c1f
+PODFILE CHECKSUM: 356399addc30956132c6f938c274e8b60f601639
 
 COCOAPODS: 1.1.1

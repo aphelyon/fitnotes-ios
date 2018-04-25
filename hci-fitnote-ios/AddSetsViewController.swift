@@ -11,6 +11,20 @@ import UIKit
 class AddSetsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var exercise = Exercise()
+    var workout = Workout()
+    
+    func displayAlertWithTitle(title: String, message: String){
+        let controller = UIAlertController(title: title,
+                                           message: message,
+                                           preferredStyle: .alert)
+        
+        controller.addAction(UIAlertAction(title: "OK",
+                                           style: .default,
+                                           handler: nil))
+        
+        present(controller, animated: true, completion: nil)
+        
+    }
     
     @IBOutlet weak var SetTableView: UITableView!
     @IBOutlet weak var navigationBar: UINavigationItem!
@@ -18,6 +32,27 @@ class AddSetsViewController: UIViewController, UITableViewDataSource, UITableVie
          dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func finishWorkout(_ sender: Any) {
+        if exercise.sets.count > 0{
+            workout.exercises.append(exercise)
+            self.performSegue(withIdentifier: "saveWorkout", sender: self)
+        }
+        else {
+            self.displayAlertWithTitle(title: "No Sets in Current Exercise",
+                                       message: "Please add some to sets to the exercise")
+        }
+    }
+    
+    @IBAction func addExercises(_ sender: Any) {
+        if exercise.sets.count > 0{
+            workout.exercises.append(exercise)
+            self.performSegue(withIdentifier: "addMoreExercises", sender: self)
+        }
+        else {
+            self.displayAlertWithTitle(title: "No Sets in Current Exercise",
+                                       message: "Please add some to sets to the exercise")
+        }
+    }
     @IBAction func clearSet(_ sender: Any) {
         weightTextField.text = ""
         repTextField.text = ""
@@ -138,6 +173,25 @@ class AddSetsViewController: UIViewController, UITableViewDataSource, UITableVie
             
             // delete the table view row
             tableView.deleteRows(at: [indexPath], with: .fade)
+            self.SetTableView.reloadData()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "saveWorkout") {
+            let destinationVC = segue.destination as! FirstViewController
+            let targetController = destinationVC
+            targetController.currentWorkout = workout
+            targetController.startTextField.text = "Add exercises to current workout"
+            targetController.startTextField.sizeToFit()
+            targetController.startTextField.center.x = self.view.center.x
+            targetController.tableView.isHidden = false
+            targetController.tableView.reloadData()
+        }
+        if (segue.identifier == "addMoreExercises") {
+            let destinationVC = segue.destination as! AddWorkoutViewController
+            let targetController = destinationVC
+            targetController.workout = workout
         }
     }
 
